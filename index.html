@@ -1,112 +1,150 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Optik Sahabat Mata menyediakan kacamata dan lensa berkualitas dengan harga terjangkau. Kunjungi website kami untuk melihat koleksi terbaru!
-">
-  <title>Optik Sahabat Mata – Layanan Kacamata & Lensa Profesional
-</title>
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; }
-    header { background: #1e90ff; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
-    header h1 { margin: 0; font-size: 20px; }
-    nav a { color: white; text-decoration: none; margin: 0 10px; font-weight: bold; }
-    .hero { background: url('https://images.unsplash.com/photo-1582738412023-2a38d10b5dfd?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px; }
-    .hero h2 { font-size: 32px; margin-bottom: 10px; }
-    .hero p { font-size: 18px; margin-bottom: 20px; }
-    .btn { background: #1e90ff; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; }
-    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
-    h2 { text-align: center; color: #1e90ff; margin-bottom: 30px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .card { border: 1px solid #ddd; border-radius: 10px; overflow: hidden; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: white; }
-    .card img { width: 100%; height: 200px; object-fit: cover; }
-    .card h3 { margin: 15px 0 5px; }
-    .card p { margin: 5px 0 15px; color: #555; }
-    .card a { display: inline-block; margin-bottom: 15px; }
-    footer { background: #1e90ff; color: white; text-align: center; padding: 15px; margin-top: 30px; }
-    iframe { width: 100%; height: 250px; border: none; border-radius: 10px; }
-  </style>
-</head><link rel="icon" type="image/png" href="/favicon.png">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website resmi Optik Sahabat Mata – Melihat lebih jelas dunia di sekitar Anda.">
+    <title>Optik Sahabat Mata</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Reset & basic style */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #00aaff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.2rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            background-color: #0077cc;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #0077cc;
+            margin-bottom: 15px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service-card {
+            background: white;
+            flex: 1 1 200px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        footer {
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        footer p {
+            font-size: 0.9rem;
+        }
+        button {
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #0077cc;
+        }
+    </style>
+</head>
 <body>
+    <header>
+        <h1>Optik Sahabat Mata</h1>
+        <p>Sahabat Terbaik Mata Anda</p>
+    </header>
 
-  <header>
-    <h1>Optik Sahabat Mata</h1>
     <nav>
-      <a href="#produk">Produk</a>
-      <a href="#layanan">Layanan</a>
-      <a href="#testimoni">Testimoni</a>
-      <a href="#kontak">Kontak</a>
+        <a href="#home">Beranda</a>
+        <a href="#services">Layanan</a>
+        <a href="#contact">Kontak</a>
     </nav>
-  </header>
 
-  <section class="hero">
-    <h2>Melihat lebih jelas dunia di sekitar Anda</h2>
-    <p>Koleksi kacamata modern, nyaman, dan terjangkau</p>
-    <a href="#produk" class="btn">Lihat Koleksi</a>
-  </section>
+    <main>
+        <section id="home">
+            <h2>Selamat Datang!</h2>
+            <p>Kami menyediakan layanan optik profesional dengan berbagai pilihan kacamata berkualitas tinggi. Temukan solusi terbaik untuk kesehatan mata Anda di Optik Sahabat Mata.</p>
+            <button>Pelajari Lebih Lanjut</button>
+        </section>
 
-  <section id="produk">
-    <h2>Katalog Produk</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1589396573203-bb647ff9b8b2?auto=format&fit=crop&w=800&q=80" alt="Frame Kacamata">
-        <h3>Frame Clip-On</h3>
-        <p>Rp 125.000</p>
-        <a class="btn" href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Frame%20Clip-On">Pesan via WA</a>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1591076482161-df0e2f9c0b57?auto=format&fit=crop&w=800&q=80" alt="Lensa Photocromic">
-        <h3>Lensa Photocromic</h3>
-        <p>Mulai Rp 60.000</p>
-        <a class="btn" href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Lensa%20Photocromic">Pesan via WA</a>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1500336624523-d727130c3328?auto=format&fit=crop&w=800&q=80" alt="Lensa Antiradiasi">
-        <h3>Lensa Antiradiasi</h3>
-        <p>Rp 150.000</p>
-        <a class="btn" href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Lensa%20Antiradiasi">Pesan via WA</a>
-      </div>
-    </div>
-  </section>
+        <section id="services">
+            <h2>Layanan Kami</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Pemeriksaan Mata</h3>
+                    <p>Tim profesional kami siap memeriksa kondisi mata Anda secara menyeluruh.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Kacamata Resep</h3>
+                    <p>Pilih kacamata sesuai resep dokter dengan berbagai model dan desain modern.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Lensa Antiradiasi</h3>
+                    <p>Melindungi mata Anda dari paparan radiasi layar Gadget, Komputer, Maupun Laptop serta melindungi mata anda dari sinar UV.</p>
+                  <h3>Lensa Photocromic</h3>
+                    <p>Lensa yang dapat berubah jika terpapar terik sinar matahari</p>
+                  <h3>Lensa Bluecromic</h3>
+                    <p>Melindungi mata Anda dari paparan radiasi layar Gadget, serta lensa dapat berubah gelap jika terpapar sinar matahari</p>
+                </div>
+            </div>
+        </section>
 
-  <section id="layanan">
-    <h2>Layanan Kami</h2>
-    <ul>
-      <li>Pemeriksaan mata gratis</li>
-      <li>Ganti lensa cepat</li>
-      <li>Garansi kualitas lensa</li>
-    </ul>
-  </section>
+        <section id="contact">
+            <h2>Kontak Kami</h2>
+            <p>Email: pioneropro@gmail.com</p>
+            <p>Telepon: 0858-1475-4622</p>
+            <p>Alamat: Jalan Raya Pondok Ranggon, Cipayung, Jakarta Timur. Jalan Leuwinanggung Dekat SMA7 Depok, Tapos, Depok</p>
+        </section>
+    </main>
 
-  <section id="testimoni">
-    <h2>Testimoni Pelanggan</h2>
-    <div class="grid">
-      <div class="card">
-        <p>"Kacamata nyaman dan harga terjangkau. Pelayanan ramah sekali!"</p>
-        <strong>- Andi</strong>
-      </div>
-      <div class="card">
-        <p>"Lensa antiradiasi sangat membantu untuk bekerja di depan laptop."</p>
-        <strong>- Siti</strong>
-      </div>
-      <div class="card">
-        <p>"Pemeriksaan mata gratisnya sangat membantu. Recommended!"</p>
-        <strong>- Rina</strong>
-      </div>
-    </div>
-  </section>
-
-  <section id="kontak">
-    <h2>Kontak Kami</h2>
-    <p>Alamat: Jl. Contoh No. 123, Jakarta</p>
-    <p>WhatsApp: <a href="https://wa.me/6281234567890">+62 812 3456 7890</a></p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0278777734683!2d110.39129001477889!3d-7.86719969432986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57776abf7a59%3A0x2e8c98691c8e5e4!2sOptik!5e0!3m2!1sid!2sid!4v1602838481234"></iframe>
-  </section>
-
-  <footer>
-    <p>© 2025 Optik Sahabat Mata | Ikuti kami di Instagram & Facebook</p>
-  </footer>
-
+    <footer>
+        <p>&copy; 2025 Optik Sahabat Mata. Sahabat terbaik mata anda.</p>
+    </footer>
 </body>
 </html>
