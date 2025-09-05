@@ -3,105 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Optik Sahabat Mata - Sahabat Terbaik Mata Anda">
   <title>Optik Sahabat Mata</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
   <!-- Navbar -->
-  <header>
-    <div class="logo">OPTIK<span>SAHABAT MATA</span></div>
-    <nav>
-      <ul>
-        <li><a href="#">PROMO</a></li>
-        <li><a href="#">FRAMES</a></li>
-        <li><a href="#">SUNGLASSES</a></li>
-        <li><a href="#">BRAND</a></li>
-        <li><a href="#">LENS</a></li>
-        <li><a href="#">CONTACT LENS</a></li>
-        <li><a href="#">SOLUTION</a></li>
-        <li><a href="#">STORE</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">ABOUT</a></li>
-      </ul>
-    </nav>
-    <div class="icons">
-      🔍 ❤️ 👤 🛒
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">OPTIK SAHABAT MATA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Promo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Frames</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sunglasses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Brand</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Lens</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Lens</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Solution</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Store</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <!-- Slider -->
-  <section class="slider">
-    <div class="slides">
-      <img src="images/slide1.jpg" class="active" alt="Promo 1">
-      <img src="images/slide2.jpg" alt="Promo 2">
-      <img src="images/slide3.jpg" alt="Promo 3">
+  <!-- Hero Slider -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/promo1.jpg" class="d-block w-100" alt="Promo 1">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/promo2.jpg" class="d-block w-100" alt="Promo 2">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/promo3.jpg" class="d-block w-100" alt="Promo 3">
+      </div>
     </div>
-    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-    <div class="dots">
-      <span class="dot" onclick="setSlide(1)"></span>
-      <span class="dot" onclick="setSlide(2)"></span>
-      <span class="dot" onclick="setSlide(3)"></span>
-    </div>
-  </section>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 
   <!-- Footer -->
-  <footer>
-    <div class="top-footer">
-      <div class="subscribe">
-        <label for="email">SUBSCRIBE</label>
-        <input type="email" id="email" placeholder="Email">
-        <button>+</button>
+  <footer class="bg-success text-white mt-5 p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>About Us</h5>
+          <ul class="list-unstyled">
+            <li>Store Locations</li>
+            <li>Expert Opticians</li>
+            <li>Advance Technology</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Customer Service</h5>
+          <ul class="list-unstyled">
+            <li>Contact Us</li>
+            <li>Privacy Policy</li>
+            <li>FAQ</li>
+            <li>Warranty</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Tips & Tricks</h5>
+          <ul class="list-unstyled">
+            <li>How to choose your lens</li>
+            <li>How to choose your frames</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contact Us</h5>
+          <p>Jalan Raya Pondok Ranggon<br>Jakarta Timur, DKI Jakarta</p>
+          <p>Tel: 0858-1475-4622</p>
+          <p>Email: info@optiksahabatmata.com</p>
+        </div>
       </div>
-      <div class="socials">
-        FOLLOW US ON 
-        <a href="https://instagram.com/Sahabat_mata_optik" target="_blank">📷</a>
-        <a href="https://tiktok.com/@Sahabat_mata_optik" target="_blank">🎵</a>
-        <a href="#">👍</a>
-        <a href="#">▶️</a>
-      </div>
-    </div>
-
-    <div class="footer-columns">
-      <div>
-        <h4>ABOUT US</h4>
-        <p>Store Locations</p>
-        <p>Expert Opticians</p>
-        <p>Advance Technology</p>
-        <p>Careers</p>
-      </div>
-      <div>
-        <h4>CUSTOMER SERVICE</h4>
-        <p>Contact Us</p>
-        <p>Privacy Policy</p>
-        <p>FAQ</p>
-        <p>Warranty</p>
-      </div>
-      <div>
-        <h4>TIPS AND TRICKS</h4>
-        <p>How to choose your lens</p>
-        <p>How to choose your frames</p>
-      </div>
-      <div>
-        <h4>CONTACT US</h4>
-        <p>Jalan Raya Pondok Ranggon Dekat SDN 02,  
-        Cipayung, Jakarta Timur</p>
-        <p>Jalan Leuwinanggung Dekat SMA7 Depok,  
-        Tapos, Kota Depok</p>
-        <p>Customer Service: 0858-1475-4622</p>
-        <p>Email: cs@sahabatmata.com</p>
+      <div class="text-center mt-3">
+        &copy; 2025 Optik Sahabat Mata - All Rights Reserved
       </div>
     </div>
-
-    <div class="bottom-footer">
-      <p>© 2025 OPTIK SAHABAT MATA</p>
-    </div>
-
-    <!-- WA floating button -->
-    <a href="https://wa.me/6285814754622" class="wa-float" target="_blank">💬</a>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
