@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Frame Kacamata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #87ceeb;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        .frame-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 250px;
+            transition: transform 0.2s;
+        }
+        .frame-card:hover {
+            transform: scale(1.05);
+        }
+        .frame-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .frame-info {
+            padding: 15px;
+            text-align: center;
+        }
+        .frame-info h2 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+        }
+        .frame-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+        .frame-info .price {
+            color: #ff4500;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Galeri Frame Kacamata</h1>
+    <p>Temukan frame favorit Anda</p>
+</header>
+
+<section class="gallery">
+    <div class="frame-card">
+        <img src="https://via.placeholder.com/250x250?text=Frame+1" alt="Frame 1">
+        <div class="frame-info">
+            <h2>Frame Classic</h2>
+            <p>Desain elegan untuk semua acara</p>
+            <div class="price">Rp 125.000</div>
+        </div>
+    </div>
+
+    <div class="frame-card">
+        <img src="https://via.placeholder.com/250x250?text=Frame+2" alt="Frame 2">
+        <div class="frame-info">
+            <h2>Frame Modern</h2>
+            <p>Ringan dan nyaman digunakan sehari-hari</p>
+            <div class="price">Rp 150.000</div>
+        </div>
+    </div>
+
+    <div class="frame-card">
+        <img src="https://via.placeholder.com/250x250?text=Frame+3" alt="Frame 3">
+        <div class="frame-info">
+            <h2>Frame Trendy</h2>
+            <p>Gaya terbaru untuk penampilan stylish</p>
+            <div class="price">Rp 175.000</div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
