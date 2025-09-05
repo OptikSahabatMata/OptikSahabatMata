@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koleksi Frame Sunglasses dan Clip On</title>
+    <title>Koleksi Sunglasses dan Clip on</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
             padding: 0;
         }
         header {
-            background-color: #696969;
+            background-color: #000000;
             color: white;
             padding: 20px;
             text-align: center;
@@ -27,28 +27,26 @@
             padding: 20px;
             gap: 20px;
         }
-        .frame-card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            overflow: hidden;
+        .frame-item {
             width: 250px;
-            transition: transform 0.2s;
+            text-align: center;
         }
-        .frame-card:hover {
-            transform: scale(1.05);
-        }
-        .frame-card img {
+        .frame-item img {
             width: 100%;
             height: 250px;
             object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .frame-item img:hover {
+            transform: scale(1.05);
         }
         .frame-info {
-            padding: 15px;
-            text-align: center;
+            margin-top: 10px;
         }
         .frame-info h2 {
-            margin: 10px 0 5px;
+            margin: 5px 0;
             font-size: 18px;
         }
         .frame-info p {
@@ -60,19 +58,19 @@
             color: #ff4500;
             font-weight: bold;
             font-size: 16px;
-            margin-top: 10px;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Koleksi Frame Sunglasses dan Clip On</h1>
+    <h1>Koleksi Sunglasses dan Clip ON</h1>
     <p>Temukan frame favorit Anda</p>
 </header>
 
 <section class="gallery">
-    <div class="frame-card">
+    <div class="frame-item">
         <img src="https://via.placeholder.com/250x250?text=Frame+1" alt="Frame 1">
         <div class="frame-info">
             <h2>Frame Classic</h2>
@@ -81,7 +79,7 @@
         </div>
     </div>
 
-    <div class="frame-card">
+    <div class="frame-item">
         <img src="https://via.placeholder.com/250x250?text=Frame+2" alt="Frame 2">
         <div class="frame-info">
             <h2>Frame Modern</h2>
@@ -90,7 +88,7 @@
         </div>
     </div>
 
-    <div class="frame-card">
+    <div class="frame-item">
         <img src="https://via.placeholder.com/250x250?text=Frame+3" alt="Frame 3">
         <div class="frame-info">
             <h2>Frame Trendy</h2>
@@ -102,6 +100,3 @@
 
 </body>
 </html>
-
-
-
