@@ -1,238 +1,157 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Optik Sahabat Mata</title>
-		<meta charset="utf-8" />
-		<meta name="Description" content="Optik Sahabat Mata - Sahabat Terbaik Mata Anda. Menyediakan berbagai Koleksi Frame dan Lensa Berkualitas serta layanan door to door service, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optik Sahabat Mata</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5faff;
+      color: #333;
+    }
 
-			<!-- Header -->
-				<div id="header">
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #00aaff;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+    nav a i {
+      margin-right: 8px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-					<!-- Logo -->
-						<h1><a href="index.html" id="logo">Optik <em>Sahabat Mata</em></a></h1>
+    /* Hero section dengan slider */
+    .hero {
+      position: relative;
+      height: 400px;
+      background: url('gambar-optik.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      background: rgba(0,0,0,0.5);
+      padding: 15px;
+      border-radius: 8px;
+    }
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li class="current"><a href="index.html">Beranda</a></li>
-								<li>
-									<a href="#">Produk</a>
-									<ul>
-										<li><a href="#">Koleksi Frame Terbaru</a></li>
-										<li><a href="#">Koleksi Lensa Berkualitas</a></li>
-										<li><a href="#">Paket Hemat</a></li>
-										<li>
-											<a href="#">Layanan</a>
-											<ul>
-												<li><a href="#">Door to Door Service</a></li>
-												<li><a href="#">Belanja Online</a></li>
-											</ul>
-								</li>
-								<li><a href="Tentang Kami</a></li>
-								<li><a href="Kontak</a></li>
-							</ul>
-						</nav>
+    /* Section 3 box */
+    .section-boxes {
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 20px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .box {
+      background: white;
+      border: 2px solid #00aaff;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      text-align: center;
+    }
+    .box i {
+      font-size: 40px;
+      color: #00aaff;
+      margin-bottom: 10px;
+    }
+    .box h3 {
+      margin: 10px 0;
+    }
 
-				</div>
+    /* Footer */
+    footer {
+      background-color: #00aaff;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+    footer .social a {
+      color: white;
+      margin: 0 10px;
+      font-size: 25px;
+    }
+    footer .social a:hover {
+      color: #ffdd00;
+    }
+  </style>
+</head>
+<body>
 
-			<!-- Banner -->
-				<section id="banner">
-					<header>
-						<h2>Tertarik untuk Membeli Produk Kami?</h2>
-						<ul class="actions">
-                        <li><a href="https://shopee.co.id/kacamate.id#product_list" class="button" target="_blank">Klik Di Sini</a></li>
-                        </ul>
-					</header>
-				</section>
-			
-			<!-- Highlights -->
-				<section class="wrapper style1">
-					<div class="container">
-						<div class="row gtr-200">
-							<section class="col-4 col-12-narrower">
-								<div class="box highlight">
-									<i class="fa fa-building"></i>
-									<h3>Tentang Kami</h3>
-									<p>Optik Sahabat Mata adalah salah satu toko retail kacamata pelayanan Kesehatan mata yang berlokasi di Jakarta Timur dan Depok yang sudah berdiri selama 3 tahun, dengan fokus utama memberikan solusi penglihatan yang tepat, nyaman, dan terjangkau bagi masyarakat. Kami hadir bukan hanya sebagai tempat penjualan kacamata, tetapi juga sebagai mitra dalam menjaga kesehatan mata dengan layanan pemeriksaan mata gratis dan konsultasi penglihatan.</p>
-								</div>
-							</section>
-							<section class="col-4 col-12-narrower">
-								<div class="box highlight">
-									<i class="icon solid major fa-star"></i>span>
-									<h3>Kenapa Harus Beli di Kami?</h3>
-									<ul style="text-align: left; margin: 0 auto; max-width: 300px; line-height: 1.6;">
-                                    <li>Pemeriksaan Mata Gratis dengan menggunakan Alat Autorefraksi Keratometer yang canggih dan akurat, dioperasikan oleh tenaga ahli optic berpengalaman.</li>
-                                    <li>Koleksi Frame/Bingkai kacamata lengkap untuk berbagai usia.</li>
-                                   <li>Tersedia Paket Ekonomis dengan harga terjangkau.</li>
-                                   <li>Layanan pesan antar untuk wilayah Jakarta Timur dan Depok.</li>
-                                   </ul>
-                                   </section>
-							</section>
-							<section class="col-4 col-12-narrower">
-								<div class="box highlight">
-									<i class="icon solid major fa-wrench"></i>
-									<h3>Probably Important</h3>
-									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-								</div>
-							</section>
-						</div>
-					</div>
-				</section>
+  <!-- Navbar -->
+  <nav>
+    <a href="#home"><i class="fa fa-home"></i> Home</a>
+    <a href="#produk"><i class="fa fa-glasses"></i> Produk</a>
+    <a href="#layanan"><i class="fa fa-handshake"></i> Layanan Kami</a>
+    <a href="#kontak"><i class="fa fa-phone"></i> Kontak Kami</a>
+  </nav>
 
-			<!-- Gigantic Heading -->
-				<section class="wrapper style2">
-					<div class="container">
-						<header class="major">
-							<h2>A gigantic heading you can use for whatever</h2>
-							<p>With a much smaller subtitle hanging out just below it</p>
-						</header>
-					</div>
-				</section>
+  <!-- Hero / Slider -->
+  <section class="hero" id="home">
+    <h1>Selamat Datang di Optik Sahabat Mata</h1>
+  </section>
 
-			<!-- Posts -->
-				<section class="wrapper style1">
-					<div class="container">
-						<div class="row">
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>The First Thing</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-									</div>
-								</div>
-							</section>
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic02.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>The Second Thing</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="row">
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic03.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>The Third Thing</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-									</div>
-								</div>
-							</section>
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic04.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>The Fourth Thing</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-					</div>
-				</section>
+  <!-- 3 Box Section -->
+  <section class="section-boxes">
+    <div class="box">
+      <i class="fa fa-store"></i>
+      <h3>Tentang Kami</h3>
+      <p>Kami adalah optik terpercaya yang menyediakan berbagai pilihan frame dan lensa berkualitas.</p>
+    </div>
+    <div class="box">
+      <i class="fa fa-star"></i>
+      <h3>Kenapa Harus Beli di Kami?</h3>
+      <p>
+        - Pemeriksaan Mata Gratis dengan alat modern<br>
+        - Koleksi Frame lengkap<br>
+        - Paket ekonomis<br>
+        - Layanan antar Jakarta Timur & Depok
+      </p>
+    </div>
+    <div class="box" id="layanan">
+      <i class="fa fa-handshake"></i>
+      <h3>Layanan Kami</h3>
+      <p>Pemeriksaan mata, pemasangan lensa, perbaikan frame, hingga layanan pesan antar.</p>
+    </div>
+  </section>
 
-			<!-- CTA -->
-				<section id="cta" class="wrapper style3">
-					<div class="container">
-						<header>
-							<h2>Are you ready to continue your quest?</h2>
-							<a href="#" class="button">Insert Coin</a>
-						</header>
-					</div>
-				</section>
+  <!-- Footer -->
+  <footer id="kontak">
+    <p><strong>Alamat Toko:</strong><br>
+      1. Jalan Raya Pondok Ranggon Dekat SDN 02 Pd Ranggon, Cipayung, Jakarta Timur<br>
+      2. Jalan Leuwinanggung Dekat SMA7 Depok, Tapos, Kota Depok
+    </p>
+    <p><i class="fa fa-whatsapp"></i> Customer Service: <a href="https://wa.me/6285814754622" style="color:white;">0858-1475-4622</a></p>
+    <div class="social">
+      <a href="https://instagram.com/username" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com/@username" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <p>&copy; 2025 Optik Sahabat Mata</p>
+  </footer>
 
-			<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-						<div class="row">
-							<section class="col-3 col-6-narrower col-12-mobilep">
-								<h3>Links to Stuff</h3>
-								<ul class="links">
-									<li><a href="#">Mattis et quis rutrum</a></li>
-									<li><a href="#">Suspendisse amet varius</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan dolor</a></li>
-									<li><a href="#">Mattis rutrum accumsan</a></li>
-									<li><a href="#">Suspendisse varius nibh</a></li>
-									<li><a href="#">Sed et dapibus mattis</a></li>
-								</ul>
-							</section>
-							<section class="col-3 col-6-narrower col-12-mobilep">
-								<h3>More Links to Stuff</h3>
-								<ul class="links">
-									<li><a href="#">Duis neque nisi dapibus</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum accumsan sed</a></li>
-									<li><a href="#">Mattis et sed accumsan</a></li>
-									<li><a href="#">Duis neque nisi sed</a></li>
-									<li><a href="#">Sed et dapibus quis</a></li>
-									<li><a href="#">Rutrum amet varius</a></li>
-								</ul>
-							</section>
-							<section class="col-6 col-12-narrower">
-								<h3>Get In Touch</h3>
-								<form>
-									<div class="row gtr-50">
-										<div class="col-6 col-12-mobilep">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="col-6 col-12-mobilep">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="col-12">
-											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-										</div>
-										<div class="col-12">
-											<ul class="actions">
-												<li><input type="submit" class="button alt" value="Send Message" /></li>
-											</ul>
-										</div>
-									</div>
-								</form>
-							</section>
-						</div>
-					</div>
-
-					<!-- Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
-						</ul>
-
-					<!-- Copyright -->
-						<div class="copyright">
-							<ul class="menu">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-
-				</div>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-
+</body>
 </html>
-
-
-
-
