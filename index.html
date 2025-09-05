@@ -4,197 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Optik Sahabat Mata</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5faff;
-      color: #333;
-    }
-  <!-- Welcome Bar -->
-  <div class="welcome-bar">
-  <h1>Selamat Datang di Optik Sahabat Mata</h1>
-  <p class="tagline">Sahabat Terbaik Mata Anda</p>
-  </div
-    .welcome-bar {
-  text-align: center;
-  background-color: #f0f8ff; /* biru langit muda */
-  padding: 15px 10px;
-}
-
-.welcome-bar h1 {
-  font-size: 1.8em;
-  margin: 0;
-  color: #333;
-  font-weight: bold;
-}
-
-.welcome-bar .tagline {
-  font-size: 1.1em;
-  margin: 5px 0 0 0;
-  color: #555;
-  font-style: italic;
-}
-    
-    /* Navbar */
-    nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #00aaff;
-      padding: 15px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px;
-      font-size: 18px;
-      display: flex;
-      align-items: center;
-    }
-    nav a i {
-      margin-right: 8px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Hero section dengan slider */
-    .hero {
-      position: relative;
-      height: 400px;
-      background: url('gambar-optik.jpg') no-repeat center center/cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-    }
-    .hero h1 {
-      background: rgba(0,0,0,0.5);
-      padding: 15px;
-      border-radius: 8px;
-    }
-
-    /* Section 3 box */
-    .section-boxes {
-      display: flex;
-      justify-content: space-around;
-      margin: 40px 20px;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .box {
-      background: white;
-      border: 2px solid #00aaff;
-      border-radius: 10px;
-      padding: 20px;
-      flex: 1;
-      min-width: 250px;
-      max-width: 300px;
-      text-align: center;
-    }
-    .box i {
-      font-size: 40px;
-      color: #00aaff;
-      margin-bottom: 10px;
-    }
-    .box h3 {
-      margin: 10px 0;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #00aaff;
-      color: white;
-      text-align: center;
-      padding: 30px 15px;
-    }
-    footer .social a {
-      color: white;
-      margin: 0 10px;
-      font-size: 25px;
-    }
-    footer .social a:hover {
-      color: #ffdd00;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav>
-    <a href="#home"><i class="fa fa-home"></i> Home</a>
-    <a href="#produk"><i class="fa fa-glasses"></i> Produk</a>
-    <a href="#layanan"><i class="fa fa-handshake"></i> Layanan Kami</a>
-    <a href="#kontak"><i class="fa fa-phone"></i> Kontak Kami</a>
-  </nav>
-
-  <!-- Hero / Slider -->
-  <section class="hero" id="home">
-    <h1>Optik Sahabat Mata - Sahabat Terbaik Mata Anda</h1>
-  </section>
-
-  <!-- 3 Box Section -->
-  <section class="section-boxes">
-    <div class="box">
-      <i class="fa fa-store"></i>
-      <h3>Tentang Kami</h3>
-      <p>Optik Sahabat Mata adalah salah satu toko retail kacamata pelayanan Kesehatan mata yang berlokasi di Jakarta Timur dan Depok yang sudah berdiri selama 3 tahun, dengan fokus utama memberikan solusi penglihatan yang tepat, nyaman, dan terjangkau bagi masyarakat. Kami hadir bukan hanya sebagai tempat penjualan kacamata, tetapi juga sebagai mitra dalam menjaga kesehatan mata dengan layanan pemeriksaan mata gratis dan konsultasi penglihatan</p>
+  <header>
+    <div class="logo">OPTIK<span>SAHABAT MATA</span></div>
+    <nav>
+      <ul>
+        <li><a href="#">PROMO</a></li>
+        <li><a href="#">FRAMES</a></li>
+        <li><a href="#">SUNGLASSES</a></li>
+        <li><a href="#">BRAND</a></li>
+        <li><a href="#">LENS</a></li>
+        <li><a href="#">CONTACT LENS</a></li>
+        <li><a href="#">SOLUTION</a></li>
+        <li><a href="#">STORE</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+    </nav>
+    <div class="icons">
+      🔍 ❤️ 👤 🛒
     </div>
-    <div class="box">
-      <i class="fa fa-star"></i>
-      <h3>Kenapa Harus Beli di Kami?</h3>
-      <p>
-        - Pemeriksaan Mata menggunakan alat modern oleh tenaga ahli profesional<br>
-        - Koleksi Frame lengkap dengan berbagai model<br>
-        - Tersedia paket ekonomis dengan kualitas bagus<br>
-        - Memberikan garansi pada setiap produk yang dijual
-      </p>
+  </header>
+
+  <!-- Slider -->
+  <section class="slider">
+    <div class="slides">
+      <img src="images/slide1.jpg" class="active" alt="Promo 1">
+      <img src="images/slide2.jpg" alt="Promo 2">
+      <img src="images/slide3.jpg" alt="Promo 3">
     </div>
-    <div class="box" id="layanan">
-      <i class="fa fa-handshake"></i>
-      <h3>Layanan Kami</h3>
-      <p>
-        - Menyediakan layanan door to door servis untuk wilayah Jabodetabek<br>
-        - Layanan Konsultasi dan pemeriksaan mata gratis di Toko kami<br>
-        - Servis dan cuci kacamata gratis<br>
-        - Menyediakan program tukar tambar kacamata lama yang patah
-      </p>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    <div class="dots">
+      <span class="dot" onclick="setSlide(1)"></span>
+      <span class="dot" onclick="setSlide(2)"></span>
+      <span class="dot" onclick="setSlide(3)"></span>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer id="kontak">
-    <p><strong>Alamat Toko:</strong><br>
-      1. Jalan Raya Pondok Ranggon Dekat SDN 02 Pd Ranggon, Cipayung, Jakarta Timur<br>
-      2. Jalan Leuwinanggung Dekat SMA7 Depok, Tapos, Kota Depok
-    </p>
-    <p><i class="fa fa-envelope"></i> Customer Service: <a href="https://wa.me/6285814754622" style="color:white;">0858-1475-4622</a></p>
-    <!-- Sosial Media -->
-<div class="social">
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/sahabat_mata_optik" target="_blank" title="Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
+  <footer>
+    <div class="top-footer">
+      <div class="subscribe">
+        <label for="email">SUBSCRIBE</label>
+        <input type="email" id="email" placeholder="Email">
+        <button>+</button>
+      </div>
+      <div class="socials">
+        FOLLOW US ON 
+        <a href="https://instagram.com/Sahabat_mata_optik" target="_blank">📷</a>
+        <a href="https://tiktok.com/@Sahabat_mata_optik" target="_blank">🎵</a>
+        <a href="#">👍</a>
+        <a href="#">▶️</a>
+      </div>
+    </div>
 
-  <!-- TikTok -->
-  <a href="https://www.tiktok.com/@sahabat_mata_optik" target="_blank" title="TikTok">
-    <i class="fab fa-tiktok"></i>
-  </a>
-</div>
+    <div class="footer-columns">
+      <div>
+        <h4>ABOUT US</h4>
+        <p>Store Locations</p>
+        <p>Expert Opticians</p>
+        <p>Advance Technology</p>
+        <p>Careers</p>
+      </div>
+      <div>
+        <h4>CUSTOMER SERVICE</h4>
+        <p>Contact Us</p>
+        <p>Privacy Policy</p>
+        <p>FAQ</p>
+        <p>Warranty</p>
+      </div>
+      <div>
+        <h4>TIPS AND TRICKS</h4>
+        <p>How to choose your lens</p>
+        <p>How to choose your frames</p>
+      </div>
+      <div>
+        <h4>CONTACT US</h4>
+        <p>Jalan Raya Pondok Ranggon Dekat SDN 02,  
+        Cipayung, Jakarta Timur</p>
+        <p>Jalan Leuwinanggung Dekat SMA7 Depok,  
+        Tapos, Kota Depok</p>
+        <p>Customer Service: 0858-1475-4622</p>
+        <p>Email: cs@sahabatmata.com</p>
+      </div>
+    </div>
 
-    <p>&copy; 2025 Optik Sahabat Mata</p>
+    <div class="bottom-footer">
+      <p>© 2025 OPTIK SAHABAT MATA</p>
+    </div>
+
+    <!-- WA floating button -->
+    <a href="https://wa.me/6285814754622" class="wa-float" target="_blank">💬</a>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
