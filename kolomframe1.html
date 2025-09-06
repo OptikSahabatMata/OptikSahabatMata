@@ -60,52 +60,62 @@
     }
 
     /* Tombol navigasi slider */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      padding: 12px;
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-      border-radius: 0 3px 3px 0;
-      background: rgba(0,0,0,0.5);
-      user-select: none;
-    }
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    .prev:hover, .next:hover {
-      background: rgba(255,0,0,0.8);
-    }
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px;
+  background: rgba(0,0,0,0.5);
+  user-select: none;
+  z-index: 10;   /* supaya muncul di atas gambar */
+}
 
-    /* Deskripsi Produk */
-    .deskripsi {
-      margin-top: 20px;
-      text-align: left;
-    }
-    .harga {
-      font-size: 22px;
-      font-weight: bold;
-      margin: 15px 0;
-    }
+.prev {
+  left: 0;  /* tempel di sisi kiri */
+  border-radius: 0 3px 3px 0;
+}
 
-    /* Tombol Beli */
-    .btn-beli {
-      display: inline-block;
-      background: red;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 5px;
-      font-size: 16px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .btn-beli:hover {
-      background: darkred;
-    }
+.next {
+  right: 0; /* tempel di sisi kanan */
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(255,0,0,0.8);
+}
+
+/* Tombol Beli */
+.btn-beli {
+  display: inline-block;
+  background: red;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.btn-beli:hover {
+  background: darkred;
+}
+
+/* Supaya tombol beli di tengah */
+.deskripsi {
+  margin-top: 20px;
+  text-align: center;  /* Ubah jadi center */
+}
+.deskripsi h2,
+.deskripsi p {
+  text-align: left; /* Biar teks deskripsi tetap rata kiri */
+}
+
   </style>
 </head>
 <body>
@@ -179,3 +189,4 @@
 
 </body>
 </html>
+
