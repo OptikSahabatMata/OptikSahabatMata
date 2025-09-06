@@ -5,7 +5,7 @@
   <title>Frame Titanium Oval - Optik Sahabat Mata</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Style Headbar */
+    /* Headbar */
     header {
       background-color: black;
       color: white;
@@ -37,7 +37,7 @@
       color: white;
     }
 
-    /* Container Produk */
+    /* Konten Produk */
     .container {
       max-width: 800px;
       margin: 20px auto;
@@ -57,6 +57,28 @@
     .slides img {
       width: 100%;
       border-radius: 10px;
+    }
+
+    /* Tombol navigasi slider */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 12px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      background: rgba(0,0,0,0.5);
+      user-select: none;
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+      background: rgba(255,0,0,0.8);
     }
 
     /* Deskripsi Produk */
@@ -113,11 +135,10 @@
       <div class="slides"><img src="images/frame8.jpg" alt="Frame 2"></div>
       <div class="slides"><img src="images/frame9.jpg" alt="Frame 3"></div>
 
+
       <!-- Tombol geser -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-
     </div>
 
     <!-- Deskripsi -->
@@ -130,23 +151,31 @@
   </div>
 
   <script>
-    // Script Slider Otomatis
-    let slideIndex = 0;
-    showSlides();
-    function showSlides() {
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Fungsi tombol next/prev
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Fungsi tampilkan slide
+    function showSlides(n) {
       let i;
       let slides = document.getElementsByClassName("slides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
       }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
       slides[slideIndex-1].style.display = "block";  
-      setTimeout(showSlides, 3000); // Ganti gambar tiap 3 detik
     }
+
+    // Auto slide tiap 4 detik
+    setInterval(() => {
+      plusSlides(1);
+    }, 4000);
   </script>
 
 </body>
 </html>
-
-
